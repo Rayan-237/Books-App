@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+
+    <display-name>AhmedRayanMfokeu.Assign2</display-name>
+
+    <!-- ========================= -->
+    <!--     FRONT CONTROLLER      -->
+    <!-- ========================= -->
+    <servlet>
+        <servlet-name>FrontController</servlet-name>
+        <servlet-class>viewlayer.FrontController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FrontController</servlet-name>
+        <url-pattern>/FrontController-URL</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- ========================= -->
+    <!--        CRUD SERVLETS      -->
+    <!-- ========================= -->
+
+    <!-- GET ALL AUTHORS -->
+    <servlet>
+        <servlet-name>GetAllAuthorsServlet</servlet-name>
+        <servlet-class>viewlayer.GetAllAuthorsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetAllAuthorsServlet</servlet-name>
+        <url-pattern>/GetAllAuthorsServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- GET AUTHOR BY ID -->
+    <servlet>
+        <servlet-name>GetAuthorByIdServlet</servlet-name>
+        <servlet-class>viewlayer.GetAuthorByIdServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetAuthorByIdServlet</servlet-name>
+        <url-pattern>/GetAuthorByIdServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- ADD AUTHOR -->
+    <servlet>
+        <servlet-name>AddAuthorServlet</servlet-name>
+        <servlet-class>viewlayer.AddAuthorServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddAuthorServlet</servlet-name>
+        <url-pattern>/AddAuthorServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- UPDATE AUTHOR BY ID -->
+    <servlet>
+        <servlet-name>UpdateAuthorByIdServlet</servlet-name>
+        <servlet-class>viewlayer.UpdateAuthorByIdServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateAuthorByIdServlet</servlet-name>
+        <url-pattern>/UpdateAuthorByIdServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- DELETE AUTHOR BY ID -->
+    <servlet>
+        <servlet-name>DeleteAuthorByIdServlet</servlet-name>
+        <servlet-class>viewlayer.DeleteAuthorByIdServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteAuthorByIdServlet</servlet-name>
+        <url-pattern>/DeleteAuthorByIdServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- ========================= -->
+    <!--       WELCOME PAGE        -->
+    <!-- ========================= -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>

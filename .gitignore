@@ -1,0 +1,11 @@
+/target/
+/build/
+/nbproject/private/
+/*.log
+*.class
+*.war
+*.jar
+*.ear
+.settings/
+.DS_Store
+
